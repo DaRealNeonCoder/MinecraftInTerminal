@@ -1,14 +1,44 @@
-# MinecraftInTerminal
-A version of Minecraft that runs entirely in command in the terminal.
+# Minecraft In Terminal
 
+A version of Minecraft that runs entirely in the terminal.
+
+---
+
+## Screenshots
+
+![Screenshot 1](pics/pic1.png)
+![Screenshot 2](pics/pic2.png)
+![Screenshot 3](pics/pic3.png)
+
+---
 
 ## Instructions
 
-This project will run as is on the VS code terminal. 
-to get it to run on command prompt, follow these instructions:
-1. add (new ProcessBuilder("cmd", "/c", "color").inheritIO().start().waitFor(); ) to the start of the main method, then compile Compile the file.
-2. Open command prompt.
-3. Set the window to full screen, then right click the command prompt window  and click properties.
-4.	Go to layout and make the following changes: uncheck wrap Screen buffer size  width = 9000, window width = 860, height =  610
-5. Execute the compiled file.
+### Run in VS Code
+This project runs out of the box in the VS Code terminal.
 
+---
+
+### Run in Command Prompt (Windows)
+
+To run this project in the Windows Command Prompt, follow these steps:
+
+1. Add the following line to the **start of your `main` method**:
+
+   ```java
+   new ProcessBuilder("cmd", "/c", "color")
+       .inheritIO()
+       .start()
+       .waitFor();
+Compile the file.
+Open Command Prompt.
+Set up the window:
+Maximize the window (full screen).
+Right-click the title bar → click Properties.
+Go to the Layout tab.
+Apply the following settings:
+Uncheck Wrap text output on resize
+Screen Buffer Size Width: 9000
+Window Size Width: 860
+Window Size Height: 610
+Execute the compiled file.
