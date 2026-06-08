@@ -46,3 +46,6 @@ To run this project in the Windows Command Prompt, follow these steps:
         - Window Size Height: `610`
 
 5. Execute the compiled file.
+
+
+inspired by : https://github.com/tarantino07/minecraft.c
